@@ -21,7 +21,7 @@ app.vars={}
 @app.route('/',methods=['GET','POST'])
 def index():
     if request.method=='GET':
-        return render_template('stock_ticker_selection.html')
+        return render_template('index.html')
     else:
         # request was a POST
         app.vars['stock']=request.form['stock_ticker']
