@@ -18,7 +18,7 @@ app = Flask(__name__)
 
 app.vars={}
 
-@app.route('/make_a_choice',methods=['GET','POST'])
+@app.route('/',methods=['GET','POST'])
 def make_a_choice():
     if request.method=='GET':
         return render_template('stock_ticker_selection.html')
